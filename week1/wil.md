@@ -126,7 +126,7 @@ URI: /orders/{orderId}
 
  - 주문 취소
 
-HTTP Method: DELETE
+HTTP Method: PATCH
 
 URI: /orders/{orderId}
 
