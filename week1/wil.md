@@ -109,20 +109,24 @@ URI: /products/{productId}
  - 주문 정보 생성
 
 HTTP Method: POST
+
 URI: /orders
 
  - 주문 목록 조회
 
 HTTP Method: GET
+
 URI: /orders
 
  - 개별 주문 정보 상세 조회
 
 HTTP Method: GET
+
 URI: /orders/{orderId}
 
  - 주문 취소
 
 HTTP Method: DELETE
+
 URI: /orders/{orderId}
 
