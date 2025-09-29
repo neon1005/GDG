@@ -68,19 +68,57 @@ URI:/members/{memberid}
  - Spring: Java언어의 객체 지향을 살려 좋은 객체 지향 프로그램을 개발할 수 있도록 도와주는 프레임워크. 프레임워크(앱 개발을 쉽고 효율적으로 할 수 있도록 필요한 기본 구조와 공통 기능을 제공하는 틀)
 -> Spring Boot
 
-Error Page 스크린 샷:
+ - Error Page 스크린 샷:
 <img width="1920" height="979" alt="에러페이지" src="https://github.com/user-attachments/assets/fb56f9f8-c8ed-40bd-ac17-8df8af7d537d" />
 
-작성한 온라인 쇼핑몰 프로젝트 API 명세서:
+ - 작성한 온라인 쇼핑몰 프로젝트 API 명세서:
+상품 기능:
 
+- 상품 정보 등록
 
+HTTP Method: POST
 
+URI: /products
 
+ - 상품 목록 조회
 
+HTTP Method: GET
 
+URI: /products
 
+ - 개별 상품 정보 상세 조회
 
+HTTP Method: GET
 
+URI: /products/{productId}
 
+ - 상품 정보 수정
 
-TEST
+HTTP Method: PATCH
+
+URI: /products/{productId}
+
+ - 상품 삭제
+
+HTTP Method: DELETE
+
+URI: /products/{productId}
+
+주문 기능:
+
+ - 주문 정보 생성
+HTTP Method: POST
+URI: /orders
+
+ - 주문 목록 조회
+HTTP Method: GET
+URI: /orders
+
+ - 개별 주문 정보 상세 조회
+HTTP Method: GET
+URI: /orders/{orderId}
+
+ - 주문 취소
+HTTP Method: DELETE
+URI: /orders/{orderId}
+
