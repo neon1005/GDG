@@ -37,8 +37,8 @@ Spring Bean: 어플리케이션 전역에서 사용할 공용 객체, 스프링 
 빈 등록 방법 중 컴포넌트 스캔(자동 등록)  
 
 @Component, @ComponentScan  
-1. 컴포넌트 스캔: 어떤 클래스들이 Spring Bean인지 찾아서 등록
-2. 컴포넌트: 이 클래스가 Spring Bean임을 표시
+a. 컴포넌트 스캔: 어떤 클래스들이 Spring Bean인지 찾아서 등록
+b. 컴포넌트: 이 클래스가 Spring Bean임을 표시
 
 의존성 주입(Dependency Injection): 내가 의존하는 객체는 직접 생성하지 않고 스프링 컨테이너에서 받음  
 
@@ -53,6 +53,11 @@ c. 수정자 주입(세터 주입)
 a. 안전하게 final로 선언(변수에 한 번만 값을 할당할 수 있게 하여 변경을 막음)  
 b. 생성자에 @Autowired를 사용하면, 생성자를 통해 빈을 주입  
 c. 만약 생성자가 하나만 있다면, @Autowired를 생략 가능  
+
+OR  
+a. 필요한 의존성을 final 키워드를 사용해 추가
+b. @RequestArgsConstructor를 사용해 생성자 추가  
+
 
 
    
