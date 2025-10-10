@@ -1,6 +1,8 @@
 1. spring의 핵심 설계
 스프링 계층형 아키텍처: 브라우저 -(DTO) 컨트롤러 -(DTO) 서비스 -(DTO) DAO -(Entity) DB  
-DTO: 필요한 정보만 전달(영수증), Entity: 모든 정보 전달(원재료)
+DTO: 필요한 정보만 전달(영수증), Entity: 모든 정보 전달(원재료)  
+
+2. 웹 요청의 진입
 
 컨트롤러 계층: HTTP 요청/응답  
 HTTP Body 부분에는 키와 값 형식인 json 오브젝이 있다.    
@@ -20,12 +22,17 @@ HTTP Body 부분에는 키와 값 형식인 json 오브젝이 있다.
 a. 생성자 주입  
 b. @transactional  
 c. (readOnly = true) 옵션 -> 조회만 하는 경우, 트랜잭션 내에서 데이터가 변경되지 않도록 readOnly 속성을 활성화  
-  
-
-
-
-2. 웹 요청의 진입
 
 3. 스프링 빈& 의존성 주입
+spring: 대표적인 java 백엔드 애플리케이션 프레임워크
+spring boot: 스프링 프레임워크 돕는 도구
 
-4. 비지니스 로직의 중심
+스프링 애플리케이션 구조:  
+Tomcat이 http request 받고 spring container로 들어감.  
+
+Spring Container: 스프링 빈 저장소, 어플리케이션 컨텍스트  
+Spring Bean: 어플리케이션 전역에서 사용할 공용 객체, 스프링 컨테이너에 빈을 저장, 필요한 빈을 컨테이너에서 받아서 사용  
+
+   
+
+5. 비지니스 로직의 중심
