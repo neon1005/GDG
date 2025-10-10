@@ -17,9 +17,9 @@ HTTP Body 부분에는 키와 값 형식인 json 오브젝이 있다.
 원자성을 보장하기 위해서는 트랜잭션 단위로 처리한다.@transactional  
 
 서비스 계층 구현:  
-1. 생성자 주입
-2. @transactional
-3. (readOnly = true) 옵션 -> 조회만 하는 경우, 트랜잭션 내에서 데이터가 변경되지 않도록 readOnly 속성을 활성화  
+a. 생성자 주입
+b. @transactional
+c. (readOnly = true) 옵션 -> 조회만 하는 경우, 트랜잭션 내에서 데이터가 변경되지 않도록 readOnly 속성을 활성화  
   
 
 
