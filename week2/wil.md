@@ -55,7 +55,7 @@ b. 생성자에 @Autowired를 사용하면, 생성자를 통해 빈을 주입
 c. 만약 생성자가 하나만 있다면, @Autowired를 생략 가능  
 
 OR  
-a. 필요한 의존성을 final 키워드를 사용해 추가
+a. 필요한 의존성을 final 키워드를 사용해 추가  
 b. @RequestArgsConstructor를 사용해 생성자 추가  
 
 
